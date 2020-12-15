@@ -1,15 +1,15 @@
 <?php
 
-ini_set('display_errors', 'On'): 
+ini_set('display_errors', 'On');
 error_reporting(E_ALL);
 
 $executionStartTime = microtime(true) / 1000;
 
-$url="http://api.geonames.org/weatherJSON?north=44.1&south=-9.9&east=-22.4&west=55.2&username=christopherlynch"
+$url="http://api.geonames.org/weatherJSON?north=44.1&south=-9.9&east=-22.4&west=55.2&username=christopherlynch";
 
-$url="http://api.geonames.org/earthquakesJSON?north=44.1&south=-9.9&east=-22.4&west=55.2&username=christopherlynch"
+$url="http://api.geonames.org/earthquakesJSON?north=44.1&south=-9.9&east=-22.4&west=55.2&username=christopherlynch";
 
-$url="http://api.geonames.org/countryInfo?username=christopherlynch"
+$url="http://api.geonames.org/countryInfo?username=christopherlynch";
 
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
